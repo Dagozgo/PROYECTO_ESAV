@@ -51,7 +51,7 @@ export class AuthService {
               localStorage.setItem('currentUser', JSON.stringify(usuarioTemp));  // Guarda el usuario logueado en el localStorage
 
               // Redirige al panel de administración
-              this.router.navigate(['/admin-panel']);
+              this.router.navigate(['panelAudio']);
             } else {
               console.error('Contraseña incorrecta');
               Swal.fire('ERROR', 'Revise su email ó contraseña que estén bien escritos', 'error'); // Alerta si las contraseñas no coinciden
