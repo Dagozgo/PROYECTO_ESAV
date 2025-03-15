@@ -15,7 +15,7 @@
         </select>        
         
           <br>
-          <button (click)="openFileSelector()">Seleccionar archivo local</button>
+          <button class="Selector-de-archivo" (click)="openFileSelector()">Seleccionar archivo local</button>
           <br>
           <input #fileInput type="file" accept="audio/*" (change)="onFileSelected($event)" style="display: none;">
         
@@ -30,7 +30,7 @@
 
  <!-- Columna 1: Filtro pasa bajos -->
  <div class="equalizer-column">
-  <h1 style="text-align:center" (click)="selectSlider('lowPass')">Filtro pasa bajos</h1>
+  <button style="text-align:center" (click)="selectSlider('lowPass')">Filtro pasa bajos</button>
   <div *ngFor="let band of equalizerBands">
     <label>{{ band.label }}</label>
     <input type="range" [min]="band.min" [max]="band.max" [step]="band.step" [value]="band.value"
@@ -42,7 +42,7 @@
 
 <div class="equalizer-column">
   <!-- Título para seleccionar el filtro pasa banda -->
-  <h1 style="text-align:center" (click)="selectSlider('bandPass')">Filtro de frecuencia</h1>
+  <button style="text-align:center" (click)="selectSlider('bandPass')">Filtro de frecuencia</button>
   <div>
     <!-- Slider de frecuencia central del filtro pasa banda -->
     <input type="range" min="20" max="20000" step="1" 
@@ -66,7 +66,7 @@
 
 <!-- Columna 3: Filtro pasa altos -->
 <div class="equalizer-column">
-  <h1 style="text-align:center" (click)="selectSlider('highPass')">Filtro pasa altos</h1>
+  <button style="text-align:center" (click)="selectSlider('highPass')">Filtro pasa altos</button>
   <div *ngFor="let band of equalizerBands2">
     <label>{{ band.label }}</label>
     <input type="range" [min]="band.min" [max]="band.max" [step]="band.step" [value]="band.value"
