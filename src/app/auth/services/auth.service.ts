@@ -43,6 +43,10 @@ export class AuthService {
             if (isMatch) {  // Si las contraseñas coinciden
               console.log('Login exitoso');
 
+              // Muestra una alerta de éxito
+              Swal.fire('Login exitoso', 'Bienvenido al sistema', 'success');  // Alerta de éxito
+
+
               // Almacena la información del usuario (sin la contraseña) en el localStorage
               const usuarioTemp = {
                 ...user
