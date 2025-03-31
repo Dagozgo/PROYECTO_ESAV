@@ -1,6 +1,6 @@
 export const environment = {
-    production: true,
-    apiKey: "AIzaSyAhqccoPK_IIRClcRvEsUseIGOnoZrIBDY",
+  production: true,
+  apiKey: "AIzaSyAhqccoPK_IIRClcRvEsUseIGOnoZrIBDY",
   authDomain: "loginangular-f1277.firebaseapp.com",
   databaseURL: "https://loginangular-f1277-default-rtdb.firebaseio.com",
   projectId: "loginangular-f1277",
