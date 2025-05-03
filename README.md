@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Serve the project in HTTPS for local environment
+
+1. Using powershell install Chocolatey:
+
+``` shell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
+```
+
+2. In the folder root of the PROYECT-ESAV install [mkcert](https://github.com/FiloSottile/mkcert?tab=readme-ov-file)
+``` shell
+choco install mkcert
+```
